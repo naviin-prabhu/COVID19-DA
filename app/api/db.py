@@ -2,7 +2,7 @@ from sqlalchemy import (Column, Integer, MetaData, String, Date, Float, Table, c
 
 from databases import Database
 
-DATABASE_URL = 'postgresql://naviin:naviin@localhost:5433/covid_db'
+from credentials.dbCredentials import *
 
 engine = create_engine(DATABASE_URL)
 metadata = MetaData()
